@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="UTF-8">
+        <title>Game List By Team</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+                <nav>
+                    <ul>
+                        <a href="/index#byRound" class="button primary">Back</a>
+                    </ul>
+                </nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+            <section id="main" class="wrapper">
+                <div class="inner">
+                <div align="center">
+                    <h1 class="major" align="center">Predictions</h1>
+                    <div class="table-wrapper">
+                        <table border = "2">
+                            <thead>
+                                <tr>
+                                    <th align="center">Round</th>
+                                    <th align="center">Team A</th>
+                                    <th align="center">Team B</th>
+                                    <th align="center">Prediction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="game:${gameList}">
+                                    <td th:text="${game.round}" align="center"></td>
+                                    <td th:text="${game.teamA}" align="center"></td>
+                                    <td th:text="${game.teamB}" align="center"></td>
+                                    <td th:text="${game.predicted}" align="center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                </div>
+                </div>
+            </section>
+            </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

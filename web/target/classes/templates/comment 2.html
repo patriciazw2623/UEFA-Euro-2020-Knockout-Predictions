@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+    <meta charset = "utf-8" />
+    <style>
+        body, div, span, h1, h2, h3, header, form, section, ul, li {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font: 12px/1.5 Arial,sans-serif;
+            background-color: rgb(211, 67, 117);
+            color: #FFF;
+        }
+        .title {
+            padding: 10px;
+            padding-bottom: 0;
+        }
+        .comment-form {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+        #main {
+            width: 1000px;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .wrap {
+            overflow: hidden;
+            list-style-type: none;
+            line-height: 1.5;
+        }
+        .wrap ul {
+            padding: 10px;
+            border-bottom: 1px dashed #fff;
+            overflow: hidden;
+        }
+        .wrap ul:last-child {
+            border-bottom: none
+        }
+        .wrap .title {
+            font-size: 22px;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main">
+    <header id="header">
+        <nav>
+            <ul>
+                <a href="/index#comment" class="button primary">Back</a>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="title">评论区</h1>
+    <form action="/comment/add?" class="comment-form" method="post">
+        <div class="form-group">
+            <input type="checkbox" name="ano" class="form-control rounded-left">匿名
+        </div>
+        <div class="form-group">
+            <input type="text" name="username" class="form-control rounded-left" placeholder="用户名">
+        </div>
+        <div class="form-group d-flex">
+            <input type="text" name="comment" class="form-control rounded-left" placeholder="评论" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="form-control btn btn-primary rounded submit px-3">发送评论</button>
+        </div>
+    </form>
+    <div class="wrap" >
+        <ul th:each="comment:${commentList}">
+            <li th:text="${comment.username}" class="title"></li>
+            <li th:text="${comment.comment}"></li>
+        </ul>
+    </div>
+<!--    <section id="show" class="wrapper">-->
+<!--        <div class="inner">-->
+<!--            <div align="center">-->
+<!--                <div class="table-wrapper">-->
+<!--                    <table border = "3">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th align="center">username</th>-->
+<!--                            <th align="center">comment</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr th:each="comment:${commentList}">-->
+<!--                            <td th:text="${comment.username}" align="center"></td>-->
+<!--                            <td th:text="${comment.comment}" align="center"></td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+mvc:
+  static-path-pattern: /resources/**
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: 123456
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+
+  resources:
+    static-locations: classpath:/
+
+server:
+  port: 9070

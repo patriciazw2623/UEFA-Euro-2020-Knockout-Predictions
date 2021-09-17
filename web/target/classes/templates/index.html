@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Euro Cup Prediction</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="/css/main.css">
+		<noscript><link rel="stylesheet" href="/css/noscript.css"></noscript>
+	</head>
+
+	<body class="is-preload">
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="#intro">Homepage</a></li>
+							<li><a href="#byRound">Predictions By Round</a></li>
+							<li><a href="#byTeam">Predictions By Team</a></li>
+							<li><a href="#pay">Support Us</a></li>
+							<li><a href="#comment">Comments</a></li>
+							<li><a href="#contact">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Soccer predictions</h1>
+							<p>Descriptions Here</a>.</p>
+							<ul class="actions">
+								<li><a href="#byRound" class="button scrolly">Search Predictions By Round</a></li>
+								<li><a href="#byTeam" class="button scrolly">Search Predictions By Team</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- byRound -->
+					<section id="byRound" class="wrapper style2 spotlights">
+						<div class="inner">
+							<section>
+								<h2>Find Predictions By Round</h2>
+								<p><b>Select an item from the drop-down box. Then click on 'Confirm'.</b></p>
+
+								<script language="javascript" type="text/javascript">
+									function geturl1(){
+										var url=new Array("","/gameList","/round?r=sixteen","round?r=eighth","/round?r=semi","round?r=final");
+										var sele=document.getElementById("select0");
+										var i = sele.selectedIndex;
+										var index = sele.options[i].value;
+										alert("Jumping to:"+url[i]);
+										window.location.href=url[i];
+									}
+								</script>
+
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-medium">
+										<ul class="actions">
+											<li><select id="select0">
+												<option value="default" selected="selected">Rounds</option>
+												<option value="0">All Rounds</option>
+												<option value="1">Round of 16</option>
+												<option value="2">Quarter Final</option>
+												<option value="3">Semi Final</option>
+												<option value="4">Final</option>
+											</select></li>
+											<li><input class="button primary" value="Confirm" onclick="geturl1()"></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+
+				<!-- byTeam -->
+					<section id="byTeam" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Find Predictions By Team</h2>
+							<p><b>Select a team from the drop-down box. Then click on 'Confirm'.</b></p>
+							
+							<script language="javascript" type="text/javascript">
+								function geturl(){
+									var url=new Array("","/gameList","/team?t=Austria","/team?t=Belgium", "/team?t=Croatia",
+									"/team?t=Czech", "/team?t=Danmark","/team?t=England","/team?t=France",
+									"/team?t=Germany","/team?t=Italy","/team?t=Netherlands", "/team?t=Portugal",
+									"/team?t=Spain","/team?t=Sweden", "/team?t=Switzerland","/team?t=Ukraine", "/team?t=Wales");
+									var sele=document.getElementById("select1");
+									var i = sele.selectedIndex;
+									var index = sele.options[i].value;
+									alert("Jumping to:"+url[i]);
+									window.location.href=url[i];
+								}
+							</script>
+
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-medium">
+									<ul class="actions">
+										<li><select id="select1">
+											<option value="default" selected="selected">Teams</option>
+											<option value="0">All Teams</option>
+											<option value=”1“>Austria</option>
+											<option value=”2“>Belgium</option>
+											<option value=”3“>Croatia</option>
+											<option value=”4“>Czech Republic</option>
+											<option value=”5“>Danmark</option>
+											<option value=”6“>England</option>
+											<option value=”7“>France</option>
+											<option value=”8“>Germany</option>
+											<option value=”9“>Italy</option>
+											<option value=”10“>Netherlands</option>
+											<option value=”11“>Portugal</option>
+											<option value=”12“>Spain</option>
+											<option value=”13“>Sweden</option>
+											<option value=”14“>Switzerland</option>
+											<option value=”15“>Ukraine</option>
+											<option value=”16“>Wales</option>
+										</select></li>
+										<li><input class="button primary" value="Confirm" onclick="geturl()"></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- pay -->
+					<section id="pay" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>Support Us</h2>
+							<p><b>Click here to support.</b></p>
+							<style>
+							/* 触发弹窗图片的样式 */
+							#myImg {
+							border-radius: 5px;
+							cursor: pointer;
+							transition: 0.3s;
+							}
+
+							#myImg:hover {opacity: 0.7;}
+
+							/* 弹窗背景 */
+							.modal {
+							display: none; /* Hidden by default */
+							position: fixed; /* Stay in place */
+							z-index: 1; /* Sit on top */
+							padding-top: 100px; /* Location of the box */
+							left: 0;
+							top: 0;
+							width: 100%; /* Full width */
+							height: 100%; /* Full height */
+							overflow: auto; /* Enable scroll if needed */
+							background-color: rgb(0,0,0); /* Fallback color */
+							background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+							}
+
+							/* 图片 */
+							.modal-content {
+							margin: auto;
+							display: block;
+							width: 80%;
+							max-width: 700px;
+							}
+
+							/* 文本内容 */
+							#caption {
+							margin: auto;
+							display: block;
+							width: 80%;
+							max-width: 700px;
+							text-align: center;
+							color: #ccc;
+							padding: 10px 0;
+							height: 150px;
+							}
+
+							/* 添加动画 */
+							.modal-content, #caption {
+							-webkit-animation-name: zoom;
+							-webkit-animation-duration: 0.6s;
+							animation-name: zoom;
+							animation-duration: 0.6s;
+							}
+
+							@-webkit-keyframes zoom {
+							from {-webkit-transform:scale(0)}
+							to {-webkit-transform:scale(1)}
+							}
+
+							@keyframes zoom {
+							from {transform:scale(0)}
+							to {transform:scale(1)}
+							}
+
+							/* 关闭按钮 */
+							.close {
+							position: absolute;
+							top: 15px;
+							right: 35px;
+							color: #f1f1f1;
+							font-size: 40px;
+							font-weight: bold;
+							transition: 0.3s;
+							}
+
+							.close:hover,
+							.close:focus {
+							color: #bbb;
+							text-decoration: none;
+							cursor: pointer;
+							}
+
+							/* 小屏幕中图片宽度为 100% */
+							@media only screen and (max-width: 700px){
+							.modal-content {
+							width: 100%;
+							}
+							}
+							</style>
+							<img id="myImg" src="/css/images/blue.png" alt="二维码">
+							<div id="myModal" class="modal">
+								<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+
+							<script language="javascript" type="text/javascript">
+									var modal = document.getElementById('myModal');
+									var img = document.getElementById('myImg');
+									var modalImg = document.getElementById("img01");
+									var captionText = document.getElementById("caption");
+									img.onclick = function(){
+										modal.style.display = "block";
+										modalImg.src = this.src;
+										captionText.innerHTML = this.alt;
+									}
+									var span = document.getElementsByClassName("close")[0];
+									span.onclick = function() {
+									  modal.style.display = "none";
+									}
+							</script>
+
+						</div>
+					</section>
+
+				<!-- comment -->
+				<section id="comment" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>Comments</h2>
+						<p><b>Send comments below.</b></p>
+						<a href="/comment/all" class="button scrolly">Comment Page</a>
+					</div>
+				</section>
+
+
+						<!-- contact -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact Us</h2>
+							<p><b>Send an email:</b></p>
+							<br/>
+							<form action="mailto:example@test.com" enctype="text/plain">
+								主题:<input name="subject" type="text">
+								<br/>
+								<textarea name="body">正文</textarea>
+								<br/>
+								<input type="submit" value="提交">
+							</form>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+	</body>
+
+</html>

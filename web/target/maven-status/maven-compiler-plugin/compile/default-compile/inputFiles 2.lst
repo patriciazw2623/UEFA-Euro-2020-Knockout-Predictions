@@ -1,0 +1,15 @@
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/config/WebMVCConfigurer.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/DemoApplication.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/controller/UserController.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/controller/CommentController.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/domain/Comment.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/config/LoginInterceptor.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/repository/UserRepository.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/domain/Game.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/repository/CommentRepository.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/service/CommentService.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/repository/GameRepository.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/service/GameService.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/domain/User.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/controller/GameController.java
+/Users/patricia/Desktop/website/src/main/java/com/example/demo/service/UserService.java

@@ -1,0 +1,15 @@
+com/example/demo/domain/Comment.class
+com/example/demo/service/CommentService.class
+com/example/demo/repository/UserRepository.class
+com/example/demo/config/WebMVCConfigurer.class
+com/example/demo/repository/CommentRepository.class
+com/example/demo/domain/User.class
+com/example/demo/service/GameService.class
+com/example/demo/controller/GameController.class
+com/example/demo/repository/GameRepository.class
+com/example/demo/controller/CommentController.class
+com/example/demo/controller/UserController.class
+com/example/demo/config/LoginInterceptor.class
+com/example/demo/DemoApplication.class
+com/example/demo/domain/Game.class
+com/example/demo/service/UserService.class
